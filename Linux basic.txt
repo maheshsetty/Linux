@@ -1,0 +1,178 @@
+What is Linux:-
+----------------------------
+Limux is a free and open source
+  Unix
+  Redhat
+  Ubuntu
+  Centos
+  Fedora
+  
+What is vagrant:-
+------------------------------
+->Vagrant is open source tool
+->Tool which is created Linux instances on fly
+                                 |
+								 |Nothing but just run few commands 
+	Download VM
+	Setting up ip address
+	settings up memoreys
+	settings up network
+	settings up default configuration
+	
+->Just type commands 
+   vagrant init
+   vagrant up
+
+->Prerequisities
+  1.Virtual Box Download(5.0.10)------>
+  2.Vagrant Download  (1.7.4)--------->vagrant -v
+  3.Gitbash Download(win64)----------->git --version
+  
+Linux server:-
+---------------------------------------
+IP address:192.168.118.192
+user:einfochips
+passwd:einfochips
+Through putty login
+
+LINUX BASICS COMMANDS:-
+-----------------------------------------  
+$-->Normal User
+#-->Root User(Admin)
+/-->Root
+
+FILE SYSTEM TASK:-
+-----------------------------------------
+pwd----->Present working directory
+ls------>List of files and directorys
+ls -l--->Long list files and directorys(user,date,size)
+ls -la-->List of hidden files
+mkdir--->Create a directory
+touch--->Create a empty file
+cd------>Change Directory
+cd ..--->Go back one step
+cd - --->I want go back to previous directory
+cd../..->Go back two steps
+cp------>Copy file(F-F,F-D)
+mv------>Move file one dir to another directory
+rm------>Remove file or rename file
+cat----->Show the file in content
+more---->The Linux more command lets you view text files or other output in a scrollable manner. 
+         It displays the text one screenful at a time, and lets you scroll backwards and forwards through the text, and even lets you search the text. 
+		 EX:more file name
+less---->Less is similar to more command, but less allows both forward and backward movements.
+         EX:less file name
+head---->This command can be used show the top ten lines in the file
+         EX:head file name
+            head -15 file name (Display only 15 lines in file)
+			head -25 file name
+tail---->This command can be used show the last ten lines in the file
+         Ex:tail file name
+man----->man is the system's manual viewer; it can be used to display manual pages, scroll up and down.
+         search for occurrences of specific text, and other useful functions.
+		 EX:man grep
+
+vi Editor:-
+--------------------------------------
+Vi editors two modes
+  1.Escape mode
+  2.Insert mode
+
+Escape mode:-
+-----------------
+---->All editing operations
+---->Like(save,save as,searching,close)
+---->By default escape mode
+
+Insertmode:-
+-----------------
+---->Add and edit anything in insert mode only
+---->Like (copy,paste,delete,search,move)
+---->Insert mode allways press i
+                           |
+                           |once you will press i ->you will check down INSERT MODE
+						   
+Escape mode:-
+------------------
+save---------------->Press Esc + : + w
+quit---------------->Esc + q
+save & quit--------->Esc + : + w + q
+delete the line ---->pres dd
+copy and paste------>left click(copy)right click(paste)
+search-------------->Esc + /word name
+bottom of the line-->shift + g 
+                     shift + 1
+					 shift + 15
+k------------------->up one line
+j------------------->down line
+l------------------->move right side
+h------------------->move left side
+
+GREP COMMAND:-
+-----------------
+--->This command can be used searches the named input FILEs.
+--->Grep command is to search for a specific string in the specified file 
+
+--->http://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples
+
+Create one file devops.txt(some content)
+
+Search for the given string in a single file---------> grep scm devops.txt
+                                                       grep "Error" logfile.txt
+													   
+Search for the given string in a multiple files------> grep scm *.txt
+
+Case insensitive search using grep-------------------> grep -i "scm" *.txt(i means ignore)
+
+count in number of lines in file--------------------->grep -n scm devops.txt
+
+FIND COMMAND:-
+-----------------
+->used for searching the files in a directory hierarchy.
+
+->http://www.folkstalk.com/2011/12/101-examples-of-using-find-command-in.html
+
+------>find . -name devops.txt
+------>
+
+
+
+
+
+
+
+
+
+
+
+
+					 
+
+
+						   
+		 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
