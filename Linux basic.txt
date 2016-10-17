@@ -339,6 +339,8 @@ ln -s /home/mahi/abc/xyz mahi
 
 you  will check ls -l
 
+--------------------------------
+
 
 
 
