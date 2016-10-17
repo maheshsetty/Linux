@@ -1,0 +1,106 @@
+FILE SYSTEM COMMANDS:-
+----------------------------
+pwd
+ls
+
+    ls -l --- long style, this lists permissions, file size, modification date, ownership.
+
+    ls -a --- this means "show all", this shows hidden files, by default any file or directory starting with a '.' will not be shown.
+
+    ls -d --- list directory entires rather than contents (see example below)
+
+    ls -F --- append symbols to particular files, such as * (asterisk) for executable files.
+
+    ls -S --- sort the output of the command in decending order sorted by size.
+
+    ls -R --- (recursive) to list everything in the directories below as well as the current directory.
+
+mkdir
+cat
+cd
+cd ..
+cd ../..
+cd -
+touch
+cp
+mv
+rm
+cat hi.txt
+more hi.txt
+less hi.txt
+head hi.txt
+head -15 hi.txt
+tail hi.txt
+tail -15 hi.txt
+man
+vim helloworld.txt
+grep(search words in files)
+ grep svn devops.txt(single file)
+ grep svn *.txt(multiple files) 
+ grep -n svn devops.txt
+find(exact path)
+ find . - name devops.txt
+wc(word count)
+ wc devops.txt
+ wc -l devops.txt
+ wc -c devops.txt 
+ wc -w devops.txt
+uniq(duplicate lines)
+ uniq devops.txt 
+ uniq -d devops.txt
+sort (asscending order)
+ sort devops.txt 
+ sort -r devops.txt
+pipe(attime execute two commands)
+ cat devops.txt | wc
+cut(show the colum )
+ cut -f1 devops.txt
+ cut -f2 devops.txt
+sed(find the data format and replace tjhe line)
+ sed's/pune$/hyd/g' devops.txt
+ s -->search line
+ g-->global
+ ^-->starting line
+ $-->ending line
+echo(print single line)
+SYSTEM COMMANDS:-
+-----------------
+ps(show the running process)
+kill(kill the process)
+ kill pid
+ kill -9 pid
+df -h (show the didk usage)
+du -sh (show the current dir and files size)
+top(this command can be used onle show the cpu,memory usage)
+free(this command can be used onle show the memory usage)
+free -m (show the exact size convert to mb)
+uname -a
+uname -m
+
+NETWORK COMMANDS:-
+----------------------
+ifconfig
+whoami
+ping 192.168.10.127
+netstat(total ports and process runnnong or not)
+ netstat -nl
+ netstat -nl | grep 80
+ netstat -nl | grep 8080
+yum
+apt-get
+telnet(communicate with other port is running or not my machine)
+ telnet 192.168.10.127 8080
+ telnet 192.168.10.127 9000
+scp(copy the files one machine to another remote machine )
+ scp devops.txt mahi@10.110.4.225:/home/einfochips(files)
+ scp -r source/ mahi@10.110.4.225:/home/einfochips(dir)
+ssh(logging into remote machine and for executing command a remote machine)
+ ssh mahi@10.110.4.225 'ls'
+ ssh mahi@10.110.4.225 'df -h'
+chmod
+ln -s(create link file)
+
+
+ 
+ 
+ 
