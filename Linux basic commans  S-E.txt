@@ -123,8 +123,8 @@ ln -s(create link file)--->s is symbalic link.
 
 How to create users,groups,and passwd:-
 ---------------------------------------
-useradd mahesh
-passwd mahesh
+sudo useradd mahesh
+sudo passwd mahesh
 
 groupadd testing
 passwd testing
