@@ -14,17 +14,25 @@ ls
     ls -S --- sort the output of the command in decending order sorted by size.
 
     ls -R --- (recursive) to list everything in the directories below as well as the current directory.
-
+	
+su
 mkdir
+rmdir
 cat
 cd
 cd ..
 cd ../..
 cd -
+date
+time
+hostname
+exit
 touch
 cp
 mv
 rm
+rm -i hi.txt( confirmation before removing the file)
+rm -r example (recursively removes all files and directories under the example directory)
 cat hi.txt
 more hi.txt
 less hi.txt
@@ -74,6 +82,7 @@ du -sh (show the current dir and files size)
 top(this command can be used onle show the cpu,memory usage)
 free(this command can be used onle show the memory usage)
 free -m (show the exact size convert to mb)
+free -g (show the exact size convert to gb)
 uname -a
 uname -m
 
@@ -88,6 +97,7 @@ netstat(total ports and process runnnong or not)
  netstat -nl | grep 8080
 yum
 apt-get
+rpm( installing, uninstalling and managing software packages in Linux)
 telnet(communicate with other port is running or not my machine)
  telnet 192.168.10.127 8080
  telnet 192.168.10.127 9000
@@ -97,10 +107,41 @@ scp(copy the files one machine to another remote machine )
 ssh(logging into remote machine and for executing command a remote machine)
  ssh mahi@10.110.4.225 'ls'
  ssh mahi@10.110.4.225 'df -h'
+ service ssh status(Check the status of a service)
+ service --status-all(Check the status of all the services)
+ service ssh restart(Restart a service)
 chmod
-ln -s(create link file)
+ (user,group,other)(read write ,execute)(4,2,1)
+chown(Transfers the ownership of a file to the user with the specified user name)
+ln -s(create link file)--->s is symbalic link.
+
+How to create users,groups,and passwd:-
+---------------------------------------
+useradd mahesh
+passwd mahesh
+
+groupadd testing
+passwd testing
+
+Create a new tar archive:-
+---------------------------------------
+--->tar cvf einfochips.tar source/
+
+Extract from an existing tar archive.
+ 
+--->tar xvf einfochips.tar
 
 
- 
- 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
