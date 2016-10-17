@@ -17,6 +17,7 @@ ls
 	
 su
 mkdir
+mkdir -p dir1/dir2/dir3/dir4/(Create nested directories using one mkdir command)
 rmdir
 cat
 cd
@@ -96,7 +97,12 @@ netstat(total ports and process runnnong or not)
  netstat -nl | grep 80
  netstat -nl | grep 8080
 yum
+ yum install httpd
+  yum update httpd
+   yum remove httpd
 apt-get
+wget(download packages and installed)
+ wget http://prdownloads.sourceforge.net/sourceforge/nagios/nagios-3.2.1.tar.gz
 rpm( installing, uninstalling and managing software packages in Linux)
 telnet(communicate with other port is running or not my machine)
  telnet 192.168.10.127 8080
@@ -131,6 +137,9 @@ Extract from an existing tar archive.
  
 --->tar xvf einfochips.tar
 
+Set the system date:-
+---------------------------
+date -s "01/31/2010 23:59:53"
 
 
 
